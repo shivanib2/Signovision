@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles2.css">
+</head>
+
+<body>
+    <div class="heading">Signovision</div>
+    <div class="container">
+        <form action="/signup" method="POST"> 
+            <div class="title">Signup Form</div>
+            <div class="form">
+                <div class="input_field">
+                    <label>Full Name</label>
+                    <input type="text" class="input" name="fullname" required style="text-transform: capitalize"> 
+                </div>
+
+                <div class="input_field">
+                    <label>User Name</label>
+                    <input type="text" class="input" name="username" required> 
+                </div>
+
+                <div class="input_field">
+                    <label>Email Address</label>
+                    <input type="text" class="input" name="email" required> 
+                </div>
+
+                <div class="input_field">
+                    <label>Password</label>
+                    <input type="password" class="input" name="password" required> 
+                </div>
+
+                <div class="input_field">
+                    <button type="submit" class="btn">Signup</button>
+                </div>
+            </div>
+        </form>
+        <a href="/login" style="text-decoration: none;">
+            <p style="color:#ECE8DD;">Already on Signovision? Login</p> 
+        </a>
+    </div>
+</body>
+</html>
+

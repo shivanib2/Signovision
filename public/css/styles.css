@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #51a7c4;
+    --primary-color-light: #6b4d3f;
+    --secondary-color: #181717;
+    --extra-light: #E1D7C6;
+    --white: #ECE8DD;
+  }
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+  }
+
+
+  header {
+    background-color: #226378dd;
+    background-position: center center;
+    background-size:auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  
+  nav {
+   
+    border-bottom:rgb(14, 12, 12) solid 1px;
+   
+  }
+  .nav__logo  {
+    font-size: 1.4rem;
+    font-weight:300;
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-right: 8rem;
+
+  }
+  .nav__bar {
+   
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  
+  .nav__links {
+   
+    list-style: none;
+    display: flex;
+    align-items:right;
+    gap: 2rem;
+  }
+  
+  .link a {
+    
+    padding: 1.5rem 5px;
+    font-weight: 500;
+    color: var(--white);
+    transition: 0.3s;
+  }
+  
+  .link a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+h3
+{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+.part{
+    display: flex;
+    justify-content:space-around;
+    padding-left: 0.1rem;
+}
+
+.part.word{
+    flex: 1;
+}
+
+.part.display {
+    flex: 1;
+}
+.form-container {
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-top: 2rem;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 3rem;
+    font-weight: 900;
+    font-size:x-large;
+}
+
+.form-group input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  
+}
+
+.form-group button {
+    padding: 4px 16px;
+    background-color: #555454;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+
