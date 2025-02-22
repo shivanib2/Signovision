@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        :root {
+            --primary-color: #226378dd;
+            --primary-color-light: #6b4d3f;
+            --secondary-color: #181717;
+            --extra-light: #E1D7C6;
+            --white: #ECE8DD;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: #edeae2;
+        }
+
+        .nav__logo {
+            border-bottom: rgb(14, 12, 12) solid 1px;
+            background-color: #226378dd;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+            font-style: italic;
+            padding-top: 1rem;
+            padding-right: 4rem;
+        }
+
+        .nav__links {
+
+            list-style: none;
+            display: flex;
+            align-items: right;
+            gap: 2rem;
+            font-style: normal;
+        }
+
+        .link a {
+
+            padding: 1.2rem 3px;
+            font-size: large;
+            font-weight: 500;
+            color: #efece5;
+            transition: 0.3s;
+        }
+
+        .link a:hover {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h2 {
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 2rem;
+        }
+
+        h4 {
+            padding-top: 0.7rem;
+            padding-left: 7px;
+            font-size: large;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 7px;
+        }
+
+        ul {
+            padding: 0.6rem;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav__logo">
+        <h2 style="color: #ECE8DD;">Signovision </h2>
+        <div class="nav__bar">
+            <ul class="nav__links">
+                <li class="link"><a href="{% url 'index' %}">Home</a></li>
+                <li class="link"><a href="{% url 'about' %}">About </a></li>
+                <li class="link"><a href="{% url 'signup' %}">Sign up</a></li>
+                <li class="link"><a href="{% url 'login' %}">Login </a></li>
+                <li class="link"><a href="{% url 'contact' %}">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2>People with disabilities </h2>
+        <h3 style="padding-top: 0.7rem; ;">Deafness and hearing loss</h3>
+        <h4>Overview</h4>
+        <p>Over 5% of the world’s population – or 430 million people – require rehabilitation to address their disabling
+            hearing loss (including 34 million children). It is estimated that by 2050 over 700 million people – or 1 in
+            every 10 people – will have disabling hearing loss. Disabling hearing loss refers to hearing loss greater
+            than 35 decibels (dB) in the better hearing ear. Nearly 80% of people with disabling hearing loss live in
+            low- and middle-income countries. The prevalence of hearing loss increases with age, among those older than
+            60 years, over 25% are affected by disabling hearing loss.</p>
+        <h4>Hearing loss and Deafness</h4>
+
+        <p>A person who is not able to hear as well as someone with normal hearing – hearing thresholds of 20 dB or
+            better in both ears – is said to have hearing loss. Hearing loss may be mild, moderate, severe or profound.
+            It can affect one ear or both ears and leads to difficulty in hearing conversational speech or loud sounds.
+
+            Hard of hearing refers to people with hearing loss ranging from mild to severe. People who are hard of
+            hearing usually communicate through spoken language and can benefit from hearing aids, cochlear implants,
+            and other assistive devices as well as captioning.
+
+            Deaf people mostly have profound hearing loss, which implies very little or no hearing. They often use sign
+            language for communication.</p>
+
+
+
+        <h4>Causes of hearing loss and deafness</h4>
+        <p>Although these factors can be encountered at different periods across the life span, individuals are most
+            susceptible to their effects during critical periods in life.</p>
+        <ul>
+            <ul><b>Prenatal Period</b>
+                <li>genetic factors including hereditary and non-hereditary hearing loss</li>
+                <li>intrauterine infections – such as rubella and cytomegalovirus infection.</li>
+            </ul>
+
+            <ul><b>Perinatal Period</b>
+                <li>birth asphyxia (a lack of oxygen at the time of birth)</li>
+                <li>hyperbilirubinemia (severe jaundice in the neonatal period)</li>
+                <li>low-birth weight </li>
+                <li>other perinatal morbidities and their management.</li>
+            </ul>
+            <ul><b>Childhood and adolescence </b>
+                <li>chronic ear infections (chronic suppurative otitis media)</li>
+                <li>collection of fluid in the ear (chronic nonsuppurative otitis media)</li>
+                <li>meningitis and other infections.</li>
+            </ul>
+
+            <ul><b>Adulthood and older age </b>
+                <li>chronic diseases</li>
+                <li>smoking</li>
+                <li>otosclerosis</li>
+                <li>age-related sensorineural degeneration</li>
+                <li>sudden sensorineural hearing loss.</li>
+            </ul>
+        </ul>
+
+        <h4>The impact of unaddressed hearing loss</h4>
+        <br>
+        <p>When unaddressed, hearing loss impacts many aspects of life at individual level:</p>
+        <ul>
+            <ul>
+                <li>communication and speech</li>
+                <li>cognition</li>
+                <li>social isolation, loneliness and stigma</li>
+                <li>impact on society and economy;effects on years lived with disability (YDLs) and disability adjusted
+                    life years (DALYs)</li>
+                <li>education and employment: In developing countries, children with hearing loss and deafness often do
+                    not receive schooling. Adults with hearing loss also have a much higher unemployment rate. Among
+                    those who are employed, a higher percentage of people with hearing loss are in the lower grades of
+                    employment compared with the general workforce</li>
+            </ul>
+
+            <p>WHO estimates that unaddressed hearing loss poses an annual global cost of US$ 980 billion. This includes
+                health sector costs (excluding the cost of hearing devices), costs of educational support, loss of
+                productivity and societal costs. Of these costs, 57% are attributed to low- and middle-income countries.
+            </p>
+        </ul>
+
+
+        <h4>Prevention </h4>
+        <p>Many of the causes that lead to hearing loss can be avoided through public health strategies and clinical
+            interventions implemented across the life course. Prevention of hearing loss is essential throughout the
+            life course, from prenatal and perinatal periods to older age. In children, nearly 60% of hearing loss is
+            due to avoidable causes that can be prevented through implementation of public health measures. Likewise,
+            most common causes of hearing loss in adults, such as exposure to loud sounds and ototoxic medicines, are
+            preventable.Effective strategies for reducing hearing loss at different stages of the life course include:
+        </p>
+        <ul>
+
+            <ul>
+                <li>immunization</li>
+                <li>good maternal and childcare practices</li>
+                <li>genetic counselling</li>
+                <li>identification and management of common ear conditions</li>
+                <li>occupational hearing conservation programmes for noise and chemical exposure</li>
+                <li>safe listening strategies for the reduction of exposure to loud sounds in recreational settings; and
+                </li>
+            </ul>
+        </ul>
+        </ul>
+
+
+
+    </div>
+    <div
+        style="position:relative;   background-color: #226378dd;  text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%; color: #ECE8DD;">
+        Copyright © shivani and neha. All rights reserved.
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        :root {
+            --primary-color: #226378dd;
+            --primary-color-light: #6b4d3f;
+            --secondary-color: #181717;
+            --extra-light: #E1D7C6;
+            --white: #ECE8DD;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: #edeae2;
+        }
+
+        .nav__logo {
+            border-bottom: rgb(14, 12, 12) solid 1px;
+            background-color: #226378dd;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+            font-style: italic;
+            padding-top: 1rem;
+            padding-right: 4rem;
+        }
+
+        .nav__links {
+
+            list-style: none;
+            display: flex;
+            align-items: right;
+            gap: 2rem;
+            font-style: normal;
+        }
+
+        .link a {
+
+            padding: 1.2rem 3px;
+            font-size: large;
+            font-weight: 500;
+            color: #efece5;
+            transition: 0.3s;
+        }
+
+        .link a:hover {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h2 {
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 2rem;
+        }
+
+        h3 {
+            padding-left: 2rem;
+        }
+
+        h4 {
+            padding-top: 0.7rem;
+            padding-left: 2rem;
+            font-size: large;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 2rem;
+        }
+
+        ul {
+            padding: 0.6rem;
+            font-style: oblique;
+        }
+
+        .section {
+            display: flex;
+            padding-left: 20px;
+
+        }
+
+        .section .display {
+            flex: 2;
+        }
+
+        .section .divide {
+            flex: 2;
+
+        }
+
+        a {
+            color: #226378dd;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav__logo">
+        <h2 style="color: #ECE8DD;">Signovision </h2>
+        <div class="nav__bar">
+            <ul class="nav__links">
+                <li class="link"><a href="{% url 'index' %}">Home</a></li>
+                <li class="link"><a href="{% url 'about' %}">About </a></li>
+                <li class="link"><a href="{% url 'signup' %}">Sign up</a></li>
+                <li class="link"><a href="{% url 'login' %}">Login </a></li>
+                <li class="link"><a href="{% url 'contact' %}">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <h2 style="position: relative; padding-left: 2rem;"> Contact Details</h2>
+    <br>
+    <div class="section">
+        <div class="divide">
+            <h3>Shivani Bansal</h3>
+            <h4>Email</h4>
+            <p>sbofficial474@gmail.com</p>
+            <h4>Linkdin</h4>
+            <p> <a href="https://www.linkedin.com/in/shivanibansal11/">Profile Page</a></p>
+            <h4>Github</h4>
+            <p><a href="https://github.com/shivanib2">Github</a></p>
+        </div>
+        <br>
+        <div class="display">
+            <h3>Neha Thakor</h3>
+            <h4>Email </h4>
+            <p>neha.k.thakor@gmail.com</p>
+            <h4>Linkdin</h4>
+            <p> <a
+                    href="https://www.linkedin.com/in/neha-thakor-5b606b290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Profile
+                    Page</a></p>
+            <h4>Github</h4>
+            <p><a href="https://github.com/nehathakor">Github</a></p>
+        </div>
+    </div>
+
+    <h3 style=" position: relative; text-align: center; width: 100%; padding-top: 6rem;">Thank you for visiting the
+        website. See you again😄 ..</h3>
+    <h3 style="margin-top: 2rem; position: relative; background-color: #226378dd; text-align: center; padding: 10px 0px; position: fixed; bottom: 0; width:100%;
+    color: #ECE8DD;">
+        Copyright ©shivani and neha. All rights reserved.</h3>
+
+
+</body>
+</html>
